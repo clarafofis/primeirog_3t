@@ -4,12 +4,17 @@
     padding: 10px;
     border-radius: 10px;
     text-align: center;
+    box-shadow: 5px 6px black;
 }
 .calc input {
     background: rgb(28, 5, 58);
     color: cornsilk;
     border-radius: 5px;
     padding: 5px;
+}
+.calc input:focus {
+    background: rgb(255, 255, 255);
+    color: rgb(132, 0, 255);
 }
 #spTotal {
     background: rgb(0, 0, 0);
@@ -31,4 +36,13 @@
     border-radius: 10px;
     padding: 5px;
     cursor: pointer;
+}
+#spListaMes {
+    text-align: start;
+    border-style: dotted;
+    border-color: aqua;
+    border-width: 1px;
+    border-radius: 4px;
+    background: rgb(0, 0, 0);
+    color: rgb(87, 247, 47);
 }
