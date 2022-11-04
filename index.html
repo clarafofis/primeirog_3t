@@ -11,14 +11,15 @@
 </head>
 
 <body>
+   <input type="checkbox" id="input-calcFin">
 
    <div class="calc">
       <div id="spTotal">
          <span id="total">R$ 0,00</span>
       </div>
-      Capital: <input id="valor" type="text"> <br>
-      Juros Mensais: <input id="juros" type="text"> <br>
-      Numero de Meses: <input id="meses" type="text"> <br>
+   Capital: <input id="valor" placeholder="R$ ??" type="text"> <br>
+      Juros Mensais: <input id="juros" placeholder="% ??" type="text"> <br>
+      Numero de Meses: <input id="meses" placeholder="tempo ??" type="text"> <br>
       <button onclick="total()">Calcular</button>
       <div id="spListaMes">
          <span id="listaMes"></span>
