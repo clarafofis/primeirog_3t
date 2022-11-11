@@ -1,4 +1,4 @@
-function moeda(atual){
+ function moeda(atual){
   return atual.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
 }
 function total(){
@@ -35,6 +35,23 @@ function total(){
   document.getElementById("listaMes").innerHTML = texto;
   document.getElementById("total").innerHTML = moeda(r);
   //document.write("Resultado: " + r);
+}
+function calculaRaiz() {
+  let a = document.getElementById("a").value
+  let b = document.getElementById("b").value
+  let c = document.getElementById("c").value
+  let delta = (b*b) - (4*a*c);
+  let raiz, x1, x2;
+
+  if(delta>= 0){
+      raiz =Math.sqrt(delta);
+      x1 = ((-b)-raiz)/(2*a);
+      x2 = ((-b)-raiz)/(2*a);
+      raiz = "x1="+x1+" x2="+x2;
+  }else{
+    raiz = "Não possui raiz Real";
+  }
+  document.getElementById("raiz").innerHTML = raiz;
 }
 
 
